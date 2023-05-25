@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    color: #343a40;
+    background: #e9ecef;
+    position: relative;
+}
+.col-1{
+    width: 300px ;
+    height: 40px;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+.col-1> p{
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.col-1>.fa-twitter{
+    margin-right: 30px;
+    margin-left: 10px;
+}
+.col-3{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 200px ;
+}
+.dropdown{
+    margin-right: 20px;
+    
+}
+.col-3 .menu{
+    width: 150px;
+    height: 70px;
+    box-shadow: -8px 7px 35px -5px rgba(153, 150, 150, 0.65);
+    -webkit-box-shadow: -8px 7px 35px -5px rgba(180, 179, 179, 0.65);
+    -moz-box-shadow: -8px 7px 35px -5px rgba(172, 172, 172, 0.65);
+}
+.col-3 .m1{
+    position: absolute;
+    top: 60px;
+    right: 110px;
+}
+.col-3 .m2{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+.col-3 .menu > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(138, 135, 135);
+    line-height: 30px;
+}
+.dropbtn{
+    cursor: pointer;
+}
+.dropdown.active .menu{display: block;}
+.dropdown2.active .menu2{display: block;}
+.dropdown .menu{display: none;}
+.dropdown2 .menu2{display: none;}
