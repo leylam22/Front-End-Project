@@ -40,53 +40,20 @@
   justify-content: space-around;
   width: 200px;
 }
-.top-bar .col-3 .menu {
-  width: 150px;
-  height: 70px;
-  box-shadow: -8px 7px 35px -5px rgba(153, 150, 150, 0.65);
-  -webkit-box-shadow: -8px 7px 35px -5px rgba(180, 179, 179, 0.65);
-  -moz-box-shadow: -8px 7px 35px -5px rgba(172, 172, 172, 0.65);
-}
-.top-bar .col-3 .menu a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+.top-bar .col-3 .dropdown .btn {
+  background-color: transparent;
+  color: black;
   font-weight: bold;
-  color: rgb(138, 135, 135);
-  line-height: 30px;
+  border: none;
 }
-.top-bar .col-3 .m1 {
-  position: absolute;
-  top: 60px;
-  right: 100px;
-}
-.top-bar .col-3 .m2 {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-}
-.top-bar .col-3 .dropdownn {
-  margin-right: 20px;
-}
-.top-bar .col-3 .dropdownn .dropbtn {
-  cursor: pointer;
-}
-.top-bar .col-3 .dropdownn.active .menu {
-  display: block;
-}
-.top-bar .col-3 .dropdown2.active .menu2 {
-  display: block;
-}
-.top-bar .col-3 .dropdownn .menu {
-  display: none;
-}
-.top-bar .col-3 .dropdown2 .menu2 {
-  display: none;
+.top-bar .col-3 .dropdown .btn:hover {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border: none;
 }
 
 /* Top Bar End  */
-/* Nav Start  */
 nav {
   position: relative;
   height: 80px;
@@ -482,4 +449,162 @@ main .section3 .left .countDown div p {
 main .section3 .right img {
   width: 400px;
   height: 500px;
+}
+main .section4 {
+  width: 100%;
+}
+main .section4 .container h2 {
+  font-weight: bold;
+  margin-top: 100px;
+}
+main .section4 .container p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #7f7f80;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+main .section4 .container .catigories {
+  display: flex;
+  justify-content: space-between;
+}
+main .section4 .container .catigories .right a {
+  color: #bcac76;
+  letter-spacing: 5px;
+}
+main .section4 .container .catigories .right a:hover {
+  color: #9b8a52;
+  border-bottom: #9b8a52 2px solid;
+}
+main .section4 .container .catigories .left {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+main .section4 .container .catigories .left a {
+  color: #7f7f80;
+}
+main .section4 .container .catigories .left a:hover {
+  border-bottom: #212529 2px solid;
+  color: #212529;
+}
+main .section4 .container .catigories a {
+  text-decoration: none;
+  color: #212529;
+  font-weight: bold;
+}
+main .section4 .container .card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+main .section4 .container .card-container .card {
+  position: relative;
+  border: none;
+  border-radius: 0;
+  width: 300px;
+  height: 470px;
+}
+main .section4 .container .card-container .card .title {
+  font-weight: bold;
+  font-size: 25px;
+}
+main .section4 .container .card-container .card img {
+  width: 300px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all linear 0.4s;
+}
+main .section4 .container .card-container .card .hover-img {
+  height: 380px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+main .section4 .container .card-container .card .hidden-part {
+  visibility: hidden;
+  position: absolute;
+  top: 350px;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 50px;
+}
+main .section4 .container .card-container .card .hidden-part a {
+  text-decoration: none;
+  color: #212529;
+}
+main .section4 .container .card-container .card .hidden-part a:hover {
+  border-bottom: #212529 1px solid;
+}
+main .section4 .container .card-container .card .hidden-stars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .section4 .container .card-container .card .hidden-stars .stars {
+  visibility: hidden;
+}
+main .section4 .container .card-container .card:hover img {
+  opacity: o;
+}
+main .section4 .container .card-container .card:hover .hover-img {
+  opacity: 1;
+}
+main .section4 .container .card-container .card:hover .stars {
+  visibility: visible;
+}
+main .section4 .container .card-container .card:hover .hidden-part {
+  visibility: visible;
+}
+main .section5 {
+  background-color: #eae0bd;
+  width: 1100px;
+  height: 400px;
+  position: relative;
+  left: 13%;
+  margin-bottom: 100px;
+  margin-top: 150px;
+  z-index: 98;
+}
+main .section5 img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 500px;
+  z-index: -1;
+}
+main .section5 div {
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+}
+main .section5 div h1 {
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+main .section5 div h4 {
+  font-size: 35px;
+}
+main .section5 div button {
+  height: 50px;
+  width: 200px;
+  background-color: transparent;
+  letter-spacing: 3px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+main .section5 div button:hover {
+  background-color: #212529;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */

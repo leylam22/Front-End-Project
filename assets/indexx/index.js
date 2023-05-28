@@ -1,17 +1,5 @@
-//First top bar Dropdown Start
-const optionMenu=document.querySelector('.dropdownn')
-const selectBtn = optionMenu.querySelector('.dropbtn')
-
-selectBtn.addEventListener('click', ()=> optionMenu.classList.toggle('active'))
-
-const optionMenu2=document.querySelector('.dropdown2')
-const selectBtn2 = optionMenu2.querySelector('.dropbtn2')
-
-selectBtn2.addEventListener('click', ()=> optionMenu2.classList.toggle('active'))
-//First top bar Dropdown End
-
 // Count Down Start
-var countDownDate = new Date("May 30, 2023 00:00:00").getTime();
+var countDownDate = new Date("May 31, 2023 00:00:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
@@ -34,4 +22,47 @@ var x = setInterval(function() {
         document.querySelector('#seconds').innerHTML = '00';
     }
 }, 1000);
+// Count Down End
 
+// Render Products Start
+const container=document.querySelector('.card-container')
+function createProduct(data) {
+    const card = document.createElement('div')
+    
+    card.innerHTML=`<div class="card">
+    <img src="./assets/images/${data.img}" alt="">
+    <img class="hover-img" src="./assets/images/${data.hoverImg}" alt="">
+    <div class="hidden-part">
+        <a href="#">
+            <span>Add to cart</span>
+        </a>
+        <div>
+            <i class="fa-regular fa-heart fa-2xl" style="color: #bcac76;"></i>
+            <i class="fa-solid fa-arrows-up-down-left-right fa-2xl" style="color: #bcac76;"></i>
+        </div>
+    </div>
+    <span class="title">${data.name}</span>
+    <div class="hidden-stars">
+        <p>$${data.price}.00</p>
+        <div class="stars">
+            <i class="fa-solid fa-star" style="color: #bcac76;"></i>
+            <i class="fa-solid fa-star" style="color: #bcac76;"></i>
+            <i class="fa-solid fa-star" style="color: #bcac76;"></i>
+            <i class="fa-solid fa-star" style="color: #6b6b6b;"></i>
+            <i class="fa-solid fa-star" style="color: #6b6b6b;"></i>
+        </div>
+    </div>
+</div>`
+
+    return card;
+}
+function renderProducts() {
+    container.innerHTML = "";
+    let _temp = [...data];
+    _temp.forEach((x) => {
+      const productDiv = createProduct(x);
+      container.append(productDiv);
+    });
+}
+renderProducts()
+//Render Products End
