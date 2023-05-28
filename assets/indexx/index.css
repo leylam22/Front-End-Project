@@ -137,6 +137,7 @@ nav .right form {
 nav .right form input {
   height: 30px;
   border: none;
+  background-color: transparent;
 }
 nav .right form input:focus {
   outline: none;

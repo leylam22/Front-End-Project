@@ -129,7 +129,6 @@ nav{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        // border: #343a40 1px solid;
         width: 600px;
         margin-right: 10px;
         form{
@@ -137,6 +136,7 @@ nav{
             input{
                 height: 30px;
                 border: none;
+                background-color: transparent;
                 &:focus{
                     outline: none;
                     border-bottom: #6d6d6d72 1px solid;

@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  /* Top Bar End  */
+}
+header .top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  color: #343a40;
+  background: #e9ecef;
+}
+header .top-bar .col-1 {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .top-bar .col-1 p {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+header .top-bar .col-1 .fa-twitter {
+  margin-right: 30px;
+  margin-left: 10px;
+}
+header .top-bar .col-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+}
+header .top-bar .col-3 .dropdown .btn {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+header .top-bar .col-3 .dropdown .btn:hover {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+header nav {
+  height: 80px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .left {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+}
+header nav .left .dropdown-menu {
+  top: 23px !important;
+}
+header nav .left .btn {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+header nav .left .btn:hover {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+header nav .left #shop {
+  width: 900px;
+  height: 400px;
+  line-height: 30px;
+  position: relative;
+}
+header nav .left #shop .left {
+  flex-direction: column;
+  width: 300px;
+  position: absolute;
+  margin-top: 40px;
+}
+header nav .left #shop .middle {
+  width: 300px;
+  margin-top: 40px;
+  position: absolute;
+  left: 300px;
+}
+header nav .left #shop .right {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  left: 600px;
+}
+header nav .left #shop .right img {
+  width: 300px;
+  height: 390px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header nav .left span {
+  cursor: pointer;
+}
+header nav .left .logo {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+header nav .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 600px;
+  margin-right: 10px;
+}
+header nav .right form {
+  margin-right: 150px;
+}
+header nav .right form input {
+  height: 30px;
+  background-color: transparent;
+  border: none;
+}
+header nav .right form input:focus {
+  outline: none;
+  border-bottom: rgba(109, 109, 109, 0.4470588235) 1px solid;
+}
+header nav .right form button {
+  border: none;
+  background-color: transparent;
+}
+header nav .right i {
+  cursor: pointer;
+}
+
+main {
+  position: relative;
+  top: -80px;
+  z-index: -1;
+}
+main .section1 {
+  width: 100%;
+  height: 600px;
+}
+main .section1 .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 600px;
+  background: url(../images/blog-2.jpg) no-repeat;
+  background-size: 100% 600px;
+}
+main .section1 h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+main .section1 p {
+  font-size: 20px;
+  font-weight: 500;
+}
+main .section1 a {
+  text-decoration: none;
+  color: #bcac76;
+}
+main .section1 a:hover {
+  border-bottom: 1px solid #948144;
+  color: #948144;
+}
+main .section2 {
+  margin-top: 100px;
+}
+main .section2 .container .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+main .section2 .container .card-container .card {
+  width: 400px;
+  border: none;
+}
+main .section2 .container .card-container .card div a {
+  text-decoration: none;
+  color: #bcac76;
+  font-weight: 500;
+  margin-right: 20px;
+}
+main .section2 .container .card-container .card img {
+  width: 400px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section2 .container .end {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .section2 .container .end a {
+  text-decoration: none;
+  color: #4d5256;
+  font-size: 18px;
+}
+
+footer {
+  height: 700px;
+}
+footer .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(225, 225, 225, 0.262);
+  width: 100%;
+  height: 300px;
+}
+footer .top .ft1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  line-height: 30px;
+  justify-content: space-around;
+}
+footer .middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
+  font-size: 20px;
+}
+footer .middle .left {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .middle .left strong {
+  margin-bottom: 50px;
+  color: black;
+}
+footer .middle .left .email {
+  margin-top: 20px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .middle .left .email input {
+  border: none;
+  width: 250px;
+  height: 35px;
+}
+footer .middle .left .email input:focus {
+  outline: none;
+}
+footer .middle .right {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .middle .right .col {
+  display: flex;
+  flex-direction: column;
+}
+footer .middle .right .col a {
+  text-decoration: none;
+  color: #343a40;
+}
+footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .bottom .right a {
+  text-decoration: none;
+  color: #343a40;
+  margin-left: 10px;
+}
+footer .bottom .right a:hover {
+  border-bottom: #343a40 1px solid;
+}/*# sourceMappingURL=blog.css.map */
