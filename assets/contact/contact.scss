@@ -153,88 +153,36 @@ nav{
 }
 // Nav End 
 }
-
 main{
-    position: relative;
-    top: -80px;
-    z-index: -1;
     .section1{
-        width: 100%;
-        height: 600px;
-        .text{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            flex-direction: column;
-            height: 600px;
-            background: url(../images/blog-2.jpg) no-repeat;
-            background-size: 100% 600px;
-        }
         img{
+            position: relative;
+            top: -80px;
+            z-index: -1;
             width: 100%;
-            height: 700px;
+            height: 600px;
             object-fit: cover;
         }
-        h1{
-            font-size: 70px;
+        div{
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            text-align: center;
             font-weight: bold;
-        }
-        p{
-            font-size: 20px;
-            font-weight: 500;
-        }
-        a{
-            text-decoration: none;
-            color: #bcac76;
-            &:hover{
-                border-bottom: 1px solid #948144;
-                color: #948144;
-            }
-        }
-    }
-    .section2{
-        margin-top: 100px;
-        .container{
-            .card-container{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 40px;
-                .card{
-                    width: 400px;
-                    border: none;
-                    div{
-                        a{
-                            text-decoration: none;
-                            color: #bcac76;
-                            font-weight: 500;
-                            margin-right: 20px;
-                        }
-                    }
-                    img{
-                        width: 400px;
-                        height: 300px;
-                        object-fit: cover;
-                    }
+            a{
+                text-decoration: none;
+                color: goldenrod;
+                &:hover{
+                    color: rgb(163, 125, 30);
                 }
             }
-            .end{
-                margin-top: 100px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                a{
-                    text-decoration: none;
-                    color: #4d5256;
-                    font-size: 18px;
-                }
+            h1{
+                font-weight: bold;
+                font-size: 60px;
             }
         }
     }
 }
-
 footer{
     height: 700px;
     .top{
