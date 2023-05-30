@@ -155,18 +155,21 @@ nav{
 }
 main{
     .section1{
+        width: 100%;
+        height: 400px;
+        margin-bottom: 40px;
         img{
             position: relative;
-            top: -80px;
+            top: -81px;
             z-index: -1;
             width: 100%;
-            height: 600px;
+            height: 500px;
             object-fit: cover;
         }
         div{
             position: absolute;
-            top: 45%;
-            left: 45%;
+            top: 40%;
+            left: 43%;
             text-align: center;
             font-weight: bold;
             a{
@@ -179,6 +182,124 @@ main{
             h1{
                 font-weight: bold;
                 font-size: 60px;
+            }
+        }
+    }
+    .section2{
+        display: flex;
+        justify-content: space-around;
+        height: 200px;
+        width: 100%;
+        div{
+            width: 300px;
+            font-weight: bold;
+            p{
+                color: #868e96;
+            }
+        }
+    }
+    .section3{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        margin-bottom: 80px;
+        .left{
+            width: 50%;
+            height: inherit;
+        }
+        .right{
+            background-color: #f8f9fa;
+            width: 50%;
+            height: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h1{
+                color: #868e96;
+                font-weight: bold;
+                font-size: 80px;
+                margin-bottom: 40px;
+            }
+            div{
+                height: 110px;
+                width: 700px;
+                border-bottom: #d4d5d697 1px solid;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 40px;
+                p{
+                    width: 130px;
+                }
+            }
+        }
+    }
+    .section4{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        .left{
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h1{
+                font-weight: bold;
+                font-size: 80px;
+            }
+        }
+        .right{
+            width: 600px;
+            height: 500px;
+            font-weight: bold;
+            font-size: 20px;
+            .message{
+                textarea{
+                    border: none;
+                }
+            }
+            button{
+                background-color: transparent;
+                border: #bcac76 2px solid;
+                color: #bcac76;
+                font-weight: bold;
+                width: 160px;
+                height: 40px;
+                font-size: 15px;
+                transition: all .3s;
+                &:hover{
+                    background-color: #bcac76;
+                    color: #343a40;
+                }
+            }
+            input{
+                height: 40px;
+                border: none;
+                margin-bottom: 15px;
+                border-bottom: #343a40 1px solid;
+                &:focus{
+                    outline: none;
+                }
+            }
+            .name-txt{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .fullName{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                input{
+                    width: 280px;
+                }
+            }
+            .mail-input{
+                input{
+                    width: 598px;
+                }
             }
         }
     }

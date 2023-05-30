@@ -148,19 +148,24 @@ header nav .right i {
   cursor: pointer;
 }
 
+main .section1 {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 40px;
+}
 main .section1 img {
   position: relative;
-  top: -80px;
+  top: -81px;
   z-index: -1;
   width: 100%;
-  height: 600px;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 main .section1 div {
   position: absolute;
-  top: 45%;
-  left: 45%;
+  top: 40%;
+  left: 43%;
   text-align: center;
   font-weight: bold;
 }
@@ -174,6 +179,120 @@ main .section1 div a:hover {
 main .section1 div h1 {
   font-weight: bold;
   font-size: 60px;
+}
+main .section2 {
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  width: 100%;
+}
+main .section2 div {
+  width: 300px;
+  font-weight: bold;
+}
+main .section2 div p {
+  color: #868e96;
+}
+main .section3 {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  margin-bottom: 80px;
+}
+main .section3 .left {
+  width: 50%;
+  height: inherit;
+}
+main .section3 .right {
+  background-color: #f8f9fa;
+  width: 50%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .section3 .right h1 {
+  color: #868e96;
+  font-weight: bold;
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+main .section3 .right div {
+  height: 110px;
+  width: 700px;
+  border-bottom: rgba(212, 213, 214, 0.5921568627) 1px solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+main .section3 .right div p {
+  width: 130px;
+}
+main .section4 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+main .section4 .left {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .section4 .left h1 {
+  font-weight: bold;
+  font-size: 80px;
+}
+main .section4 .right {
+  width: 600px;
+  height: 500px;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .section4 .right .message textarea {
+  border: none;
+}
+main .section4 .right button {
+  background-color: transparent;
+  border: #bcac76 2px solid;
+  color: #bcac76;
+  font-weight: bold;
+  width: 160px;
+  height: 40px;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+main .section4 .right button:hover {
+  background-color: #bcac76;
+  color: #343a40;
+}
+main .section4 .right input {
+  height: 40px;
+  border: none;
+  margin-bottom: 15px;
+  border-bottom: #343a40 1px solid;
+}
+main .section4 .right input:focus {
+  outline: none;
+}
+main .section4 .right .name-txt {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .section4 .right .fullName {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .section4 .right .fullName input {
+  width: 280px;
+}
+main .section4 .right .mail-input input {
+  width: 598px;
 }
 
 footer {
