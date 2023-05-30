@@ -230,6 +230,87 @@ footer .bottom .right a:hover {
   border-bottom: #343a40 1px solid;
 }
 
+main .section1 {
+  position: relative;
+  top: -80px;
+  z-index: -1;
+  width: 100%;
+  height: 600px;
+  background: url(../images/magicpattern-blob-1685191168263.png) no-repeat;
+  background-size: 900px;
+  background-position: 100%;
+  background-position-x: -200px;
+  background-position-y: -400px;
+}
+main .section1 .swiper {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  --swiper-theme-color:#9b8a52 ;
+}
+main .section1 .swiper .swiper-slide {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section1 .swiper .swiper-slide .left {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+main .section1 .swiper .swiper-slide .left h6 {
+  letter-spacing: 5px;
+  font-size: 18px;
+}
+main .section1 .swiper .swiper-slide .left h1 {
+  font-weight: bold;
+  font-size: 70px;
+}
+main .section1 .swiper .swiper-slide .left p {
+  font-size: 18px;
+  color: #7f7f80;
+}
+main .section1 .swiper .swiper-slide .left button {
+  background-color: transparent;
+  border: #9b8a52 2px solid;
+  color: #9b8a52;
+  font-weight: 500;
+  width: 200px;
+  height: 40px;
+}
+main .section1 .swiper .swiper-slide .left button:hover {
+  background-color: #9b8a52;
+  color: #212529;
+}
+main .section1 .swiper .swiper-slide .right img {
+  width: 600px;
+  height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .section1 .swiper .swiper-slide .right .lila {
+  background: url(../images/blob-lila.svg) no-repeat;
+  background-size: 700px;
+  background-position-x: 10px;
+  background-position-y: -100px;
+}
+main .section1 .swiper .swiper-slide .right .pink {
+  background: url(../images/blob-pink.svg) no-repeat;
+  background-size: 700px;
+  background-position-x: 10px;
+  background-position-y: -100px;
+}
+main .section1 .swiper .swiper-slide .right .bej {
+  background: url(../images/blob-bej.svg) no-repeat;
+  background-size: 700px;
+  background-position-x: 10px;
+  background-position-y: -100px;
+}
 main .section2 .top {
   width: 700px;
   margin-left: 180px;
