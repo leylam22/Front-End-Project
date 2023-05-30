@@ -5,3 +5,10 @@ new simpleParallax(img, {
     overflow:true,
 	transition: 'cubic-bezier(0,0,0,1)'
 });
+function openNav() {
+    document.getElementById("mySidenav").style.width = "500px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }

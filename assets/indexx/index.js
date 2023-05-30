@@ -1,5 +1,5 @@
 // Count Down Start
-var countDownDate = new Date("May 31, 2023 00:00:00").getTime();
+var countDownDate = new Date("Jun 31, 2023 00:00:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
@@ -79,3 +79,11 @@ renderProducts()
         clickable: true,
       },
     });
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "500px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
