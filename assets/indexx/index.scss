@@ -169,6 +169,75 @@ nav{
                 }
             }
         }
+        #icons{
+            width: 800px;
+            height: 250px;
+            .top{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto;
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    &:hover{
+                        a{
+                            border-bottom: #212529 2px solid;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #212529;
+                    }
+                }
+            }
+            .bottom{
+                width: 800px;
+                height: 40px;
+                background-color: #9b8a52;
+                color: #212529;
+            }
+        }
+        #pages{
+            width: 1100px;
+            height: 500px;
+            position: relative;
+            .p1{
+                position: absolute;
+                // top: 0;
+                // left: 0;
+            }
+            .p2{
+                position: absolute;
+                left:285px ;
+            }
+            .p3{
+                position: absolute;
+                left: 565px;
+            }
+            .p4{
+                position: absolute;
+                right: 0;
+            }
+            img{
+                width: 250px;
+                height: 150px;
+                object-fit: cover;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 250px;
+                font-size: 13px;
+                a{
+                    text-decoration: none;
+                    color: #7f7f80;
+                    &:hover{
+                        color: #212529;
+                    }
+                }
+            }
+        }
         span{
             cursor: pointer;
         }
