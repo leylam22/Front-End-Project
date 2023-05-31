@@ -3,7 +3,7 @@ const container=document.querySelector('.card-container')
 function createProduct(data) {
     const card = document.createElement('div')
     
-    card.innerHTML=`<div class="card">
+    card.innerHTML=`<div class="card" data-aos="zoom-in">
     <img src="./assets/images/${data.img}" alt="">
     <h4>${data.title}</h4>
     <div>
