@@ -5,7 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.top-bar {
+header {
+  /* Top Bar End  */
+}
+header .top-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,45 +18,43 @@
   background: #e9ecef;
   position: relative;
 }
-.top-bar .col-1 {
+header .top-bar .col-1 {
   width: 300px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.top-bar .col-1 p {
+header .top-bar .col-1 p {
   width: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.top-bar .col-1 .fa-twitter {
+header .top-bar .col-1 .fa-twitter {
   margin-right: 30px;
   margin-left: 10px;
 }
-.top-bar .col-3 {
+header .top-bar .col-3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 200px;
 }
-.top-bar .col-3 .dropdown .btn {
+header .top-bar .col-3 .dropdown .btn {
   background-color: transparent;
   color: black;
   font-weight: bold;
   border: none;
 }
-.top-bar .col-3 .dropdown .btn:hover {
+header .top-bar .col-3 .dropdown .btn:hover {
   background-color: transparent;
   color: black;
   font-weight: bold;
   border: none;
 }
-
-/* Top Bar End  */
-nav {
+header nav {
   position: relative;
   height: 80px;
   width: 100%;
@@ -62,7 +63,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-nav .sidenav {
+header nav .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -74,21 +75,21 @@ nav .sidenav {
   transition: 0.5s;
   padding-top: 60px;
 }
-nav .sidenav .col-1 {
+header nav .sidenav .col-1 {
   width: 500px;
   margin-left: 30px;
   display: flex;
   align-items: center;
   height: 200px;
 }
-nav .sidenav .col-1 i {
+header nav .sidenav .col-1 i {
   margin-right: 10px;
 }
-nav .sidenav p {
+header nav .sidenav p {
   margin-left: 30px;
   margin-right: 30px;
 }
-nav .sidenav .btn {
+header nav .sidenav .btn {
   background-color: transparent;
   display: flex;
   align-items: flex-start;
@@ -97,178 +98,262 @@ nav .sidenav .btn {
   color: #818181;
   border: none;
 }
-nav .sidenav .btn:hover {
+header nav .sidenav .btn:hover {
   background-color: transparent;
   color: #818181;
   border: none;
 }
-nav .sidenav .closebtn {
+header nav .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
 }
-nav .sidenav a {
+header nav .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 20px;
   color: #818181;
   display: block;
 }
-nav .left {
+header nav .left {
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 500px;
 }
-nav .left .dropdown-menu {
+header nav .left .dropdown-menu {
   top: 23px !important;
 }
-nav .left .btn {
+header nav .left .btn {
   background-color: transparent;
   color: black;
   font-weight: bold;
   border: none;
 }
-nav .left .btn:hover {
+header nav .left .btn:hover {
   background-color: transparent;
   color: black;
   font-weight: bold;
   border: none;
 }
-nav .left #shop {
+header nav .left #shop {
   width: 900px;
   height: 400px;
   line-height: 30px;
   position: relative;
 }
-nav .left #shop .left {
+header nav .left #shop .left {
   flex-direction: column;
   width: 300px;
   position: absolute;
   margin-top: 40px;
 }
-nav .left #shop .middle {
+header nav .left #shop .middle {
   width: 300px;
   margin-top: 40px;
   position: absolute;
   left: 300px;
 }
-nav .left #shop .right {
+header nav .left #shop .right {
   width: 300px;
   height: 400px;
   position: absolute;
   left: 600px;
 }
-nav .left #shop .right img {
+header nav .left #shop .right img {
   width: 300px;
   height: 390px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-nav .left #icons {
+header nav .left #icons {
   width: 800px;
   height: 250px;
 }
-nav .left #icons .top {
+header nav .left #icons .top {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
 }
-nav .left #icons .top div {
+header nav .left #icons .top div {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-nav .left #icons .top div:hover a {
+header nav .left #icons .top div:hover a {
   border-bottom: #212529 2px solid;
 }
-nav .left #icons .top div a {
+header nav .left #icons .top div a {
   text-decoration: none;
   color: #212529;
 }
-nav .left #icons .bottom {
+header nav .left #icons .bottom {
   width: 800px;
   height: 40px;
   background-color: #9b8a52;
   color: #212529;
 }
-nav .left #pages {
+header nav .left #pages {
   width: 1100px;
   height: 500px;
   position: relative;
 }
-nav .left #pages .p1 {
+header nav .left #pages .p1 {
   position: absolute;
 }
-nav .left #pages .p2 {
+header nav .left #pages .p2 {
   position: absolute;
   left: 285px;
 }
-nav .left #pages .p3 {
+header nav .left #pages .p3 {
   position: absolute;
   left: 565px;
 }
-nav .left #pages .p4 {
+header nav .left #pages .p4 {
   position: absolute;
   right: 0;
 }
-nav .left #pages img {
+header nav .left #pages img {
   width: 250px;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-nav .left #pages div {
+header nav .left #pages div {
   display: flex;
   flex-direction: column;
   width: 250px;
   font-size: 13px;
 }
-nav .left #pages div a {
+header nav .left #pages div a {
   text-decoration: none;
   color: #7f7f80;
 }
-nav .left #pages div a:hover {
+header nav .left #pages div a:hover {
   color: #212529;
 }
-nav .left span {
+header nav .left span {
   cursor: pointer;
 }
-nav .left .logo {
+header nav .left .logo {
   font-weight: bold;
   text-decoration: none;
   color: black;
   margin-left: 30px;
   margin-right: 20px;
 }
-nav .right {
+header nav .right {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 600px;
   margin-right: 10px;
 }
-nav .right form {
+header nav .right form {
   margin-right: 150px;
 }
-nav .right form input {
+header nav .right form input {
   height: 30px;
   border: none;
   background-color: transparent;
 }
-nav .right form input:focus {
+header nav .right form input:focus {
   outline: none;
   border-bottom: rgba(109, 109, 109, 0.4470588235) 1px solid;
 }
-nav .right form button {
+header nav .right form button {
   border: none;
   background-color: transparent;
 }
-nav .right i {
+header nav .right i {
   cursor: pointer;
+}
+header .basket {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+header .basket .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #212529;
+}
+header .basket .top {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+header .basket .top .products {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .basket .top .products div :nth-child(3) {
+  font-weight: bold;
+}
+header .basket .top .products div h3 {
+  font-weight: bold;
+}
+header .basket .top .products img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .basket .bottom {
+  width: 600px;
+  height: 200px;
+  position: fixed;
+  background-color: #fff;
+}
+header .basket .bottom .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .basket .bottom button {
+  width: 400px;
+  height: 40px;
+  margin-left: 120px;
+  margin-top: 30px;
+}
+header .basket .bottom button a {
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #212529;
+}
+header .basket .bottom .btn1 {
+  background-color: transparent;
+  color: #212529;
+}
+header .basket .bottom .btn1:hover {
+  background-color: #212529;
+}
+header .basket .bottom .btn1:hover a {
+  color: #fff;
+}
+header .basket .bottom .btn2 {
+  margin-top: 20px;
+  background-color: #212529;
+}
+header .basket .bottom .btn2 a {
+  color: #fff;
 }
 
 footer {
@@ -335,6 +420,9 @@ footer .middle .right .col {
 footer .middle .right .col a {
   text-decoration: none;
   color: #343a40;
+}
+footer .middle .right .col a:hover {
+  border-bottom: #212529 1px solid;
 }
 footer .bottom {
   display: flex;

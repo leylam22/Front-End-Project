@@ -4,7 +4,8 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-// Top Bar Start 
+header{
+    // Top Bar Start 
 .top-bar{
     display: flex;
     align-items: center;
@@ -109,7 +110,7 @@ nav{
             right: 25px;
             font-size: 36px;
             margin-left: 50px;
-          }
+        }
         a {
             padding: 8px 8px 8px 32px;
             text-decoration: none;
@@ -271,12 +272,102 @@ nav{
                 background-color: transparent;
             }
         }
+        
         i{
             cursor: pointer;
         }
     }
 }
 // Nav End 
+
+//BASKET START
+.basket{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 50px;
+        margin-left: 50px;
+        text-decoration: none;
+        color: #212529;
+    }
+    .top{
+        width: 600px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        .products{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            div{
+                :nth-child(3){
+                    font-weight: bold;
+                }
+                h3{
+                    font-weight: bold;
+                }
+            }
+            img{
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+            }
+        }
+    }
+    .bottom{
+        width: 600px;
+        height: 200px;
+        position: fixed;
+        background-color: #fff;
+        .total{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        button{
+            width: 400px;
+            height: 40px;
+            margin-left: 120px;
+            margin-top: 30px;
+            a{
+                text-decoration: none;
+                font-size: 20px;
+                letter-spacing: 5px;
+                color: #212529;
+            }
+        }
+        .btn1{
+            background-color: transparent;
+            color: #212529;
+            &:hover{
+                background-color: #212529;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        .btn2{
+            margin-top: 20px;
+            background-color: #212529;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+
+}
 
 // Footer Start 
 footer{
@@ -339,6 +430,9 @@ footer{
                 a{
                     text-decoration: none;
                     color: #343a40;
+                    &:hover{
+                        border-bottom: #212529 1px solid;
+                    }
                 }
             }
         }

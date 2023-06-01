@@ -231,7 +231,8 @@
                 </form>
                 <i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i>
                 <i class="fa-regular fa-heart fa-2xl" style="color: #000000;"></i>
-                <i class="fa-solid fa-bag-shopping fa-2xl" style="color: #000000;"></i>
+                <i class="fa-solid fa-bag-shopping fa-2xl" onclick="openBasket()" style="color: #000000;"></i>
+                <div class="cart"><span>0</span></div>
                 <i class="fa-solid fa-bars-staggered fa-2xl " onclick="openNav()" style="color: #000000;"></i>
             </div>
             <div id="mySidenav" class="sidenav">
@@ -259,6 +260,20 @@
                 </div>
                 <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
             </div>
+            <div class="basket" id="basket">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeBasket()">&times;</a>
+                <div class="top">
+                    <!-- Products -->
+                </div>
+                <div class="bottom">
+                 <div class="total">
+                     <h3>Total:</h3>
+                     <h5>$465.32</h5>
+                 </div>
+                 <button class="btn1"><a href="#">VIEW CART</a></button>
+                 <button class="btn2"><a href="#">CHECKOUT</a></button>
+                </div> 
+             </div>
         </nav>
         <!-- Navbar End -->
     </header>
