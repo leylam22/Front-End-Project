@@ -171,6 +171,7 @@ function totalCost(product) {
     localStorage.setItem('totalCost', cartCost.toString());
 }
 
+
 function displayCart() {
     let cartItems = localStorage.getItem('productInCart');
     cartItems = JSON.parse(cartItems);
@@ -188,7 +189,7 @@ function displayCart() {
                     <p>Quantity: ${x.inCart}</p>
                     <p>Price: $${x.price}</p>
                 </div>
-                <h3>&times;</h3>
+                <h3 class="clear">&times;</h3>
             </div> 
             <hr>
             `;
@@ -199,5 +200,6 @@ function displayCart() {
     }
 }
 
-// onLoadCartNumbers();
-// displayCart();
+
+onLoadCartNumbers();
+displayCart();
